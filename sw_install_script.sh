@@ -6,7 +6,11 @@ sudo apt-get -y install synaptic
 #For chrome browser installation
 sudo apt-get  -y install chromium-browser
 
-#For skype installation 
+#For enabling 32-bit architecture
+sudo dpkg --add-architecture i386
+sudo apt-get update
+
+#For skype installation
 sudo add-apt-repository "deb http://archive.canonical.com/ $(lsb_release -sc) partner"	
 sudo apt-get update
 sudo apt-get -y install skype
